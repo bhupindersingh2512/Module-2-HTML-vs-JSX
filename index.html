@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page setup: charset, mobile viewport, page title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Inter font from Google Fonts (weights 400–700) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Project styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Dev label: shows which version of the page you're viewing -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing cards row: 3 plans side by side -->
     <div class="cards-container">
+
+        <!-- Card 1: Hobby (free tier) -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -20,6 +31,7 @@
                 </p>
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
+                    <!-- Feature list: each item has a checkmark + text -->
                     <ul class="features-list">
                         <li>
                             <span class="checkmark">✓</span>
@@ -36,8 +48,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- Secondary CTA: light pill button -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card 2: Pro ($20/mo) — highlighted primary CTA -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -67,8 +82,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary CTA: dark filled pill button -->
             <button class="download-button primary">Get Pro</button>
         </div>
+
+        <!-- Card 3: Enterprise ($100/mo) -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Enterprise</h3>
@@ -98,9 +116,10 @@
                     </ul>
                 </div>
             </div>
+            <!-- Secondary CTA: light pill button -->
             <button class="download-button secondary">Get Enterprise</button>
         </div>
-        </div>
-    </div>
+
+    </div><!-- /.cards-container -->
 </body>
 </html>
